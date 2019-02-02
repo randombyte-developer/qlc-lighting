@@ -880,8 +880,8 @@
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2"/>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="2">6:0,223,1,89</Step>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2">6:0,97,1,87</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="2">6:0,173,1,96</Step>
    <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="2">6:0,94,1,219</Step>
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0" Values="2">6:0,110,1,110</Step>
    <Step Number="4" FadeIn="0" Hold="0" FadeOut="0" Values="2">6:0,110,1,33</Step>
@@ -910,26 +910,26 @@
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,55,1,110</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,195,1,163</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,72,1,168</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,118,1,135</Step>
-   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,188,1,42</Step>
-   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,201,1,194</Step>
-   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,48,1,161</Step>
-   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,31,1,52</Step>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,91,1,115</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,178,1,138</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,95,1,161</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,133,1,128</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,183,1,106</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,174,1,147</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,85,1,166</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,78,1,52</Step>
    <Step Number="8" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,128,1,70</Step>
-   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,218,1,177</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,78,1,184</Step>
    <Step Number="10" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,128,1,128</Step>
-   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,221,1,38</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,185,1,38</Step>
    <Step Number="12" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,115,1,222</Step>
    <Step Number="13" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,105,1,57</Step>
    <Step Number="14" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,171,1,52</Step>
-   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,21,1,226</Step>
-   <Step Number="16" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,198,1,196</Step>
+   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,80,1,229</Step>
+   <Step Number="16" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,180,1,201</Step>
    <Step Number="17" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,125,1,206</Step>
-   <Step Number="18" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,203,1,184</Step>
-   <Step Number="19" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,21,1,152</Step>
+   <Step Number="18" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,173,1,187</Step>
+   <Step Number="19" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,68,1,138</Step>
   </Function>
   <Function ID="139" Type="Scene" Name="Aus" Path="Led Bar/2/Farben">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1099,12 +1099,12 @@
     <Preset ID="16">
      <Name>∞</Name>
      <Value>-2</Value>
-     <Input Universe="0" Channel="200"/>
+     <Input Universe="0" Channel="170"/>
     </Preset>
     <Preset ID="17">
      <Name>3s</Name>
      <Value>3000</Value>
-     <Input Universe="0" Channel="202"/>
+     <Input Universe="0" Channel="171"/>
     </Preset>
    </SpeedDial>
    <CueList Caption="Cue-Liste" ID="31">
@@ -1288,6 +1288,7 @@
      <Function ID="10"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="168"/>
     </Button>
     <Button Caption="Blau" ID="108" Icon="">
      <WindowState Visible="True" X="50" Y="10" Width="40" Height="40"/>
@@ -1551,6 +1552,7 @@
      <Function ID="92"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="167"/>
     </Button>
     <Button Caption="Blau" ID="68" Icon="">
      <WindowState Visible="True" X="50" Y="10" Width="40" Height="40"/>
@@ -1678,6 +1680,7 @@
      <Function ID="94"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="163"/>
     </Button>
     <Button Caption="Schnell" ID="77" Icon="">
      <WindowState Visible="True" X="80" Y="10" Width="60" Height="35"/>
@@ -1691,6 +1694,7 @@
      <Function ID="95"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="164"/>
     </Button>
    </SoloFrame>
    <SoloFrame Caption="" ID="32">
@@ -2230,6 +2234,7 @@
      <Function ID="104"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="168"/>
     </Button>
     <Button Caption="Blau" ID="13" Icon="">
      <WindowState Visible="True" X="50" Y="10" Width="40" Height="40"/>
@@ -2565,6 +2570,7 @@
      <Function ID="70"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="169"/>
     </Button>
    </SoloFrame>
    <SoloFrame Caption="" ID="133">
@@ -2725,6 +2731,7 @@
      <Function ID="70"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="169"/>
     </Button>
    </SoloFrame>
    <CueList Caption="Cue-Liste" ID="145">
@@ -2812,6 +2819,7 @@
      <Function ID="139"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="167"/>
     </Button>
     <Button Caption="Blau" ID="35" Icon="">
      <WindowState Visible="True" X="50" Y="10" Width="40" Height="40"/>
@@ -3025,10 +3033,26 @@
     <Stop/>
     <SlidersMode>Crossfade</SlidersMode>
    </CueList>
+   <Button Caption="" ID="42" Icon="">
+    <WindowState Visible="True" X="1055" Y="350" Width="45" Height="45"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Blackout</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="165"/>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
-   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
+    <Input Universe="0" Channel="166"/>
+   </GrandMaster>
   </Properties>
  </VirtualConsole>
  <SimpleDesk>
