@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.0</Version>
+  <Author>Sven Rahn</Author>
+ </Creator>
+ <Manufacturer>American DJ</Manufacturer>
+ <Model>DJ Scan 250ex</Model>
+ <Type>Scanner</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="10">White</Capability>
+  <Capability Min="11" Max="21">Red</Capability>
+  <Capability Min="22" Max="32">Deep Blue</Capability>
+  <Capability Min="33" Max="43">Green</Capability>
+  <Capability Min="44" Max="54">Yellow</Capability>
+  <Capability Min="55" Max="65">Orange</Capability>
+  <Capability Min="66" Max="76">Pink</Capability>
+  <Capability Min="77" Max="87">Light Blue</Capability>
+  <Capability Min="88" Max="98">UV</Capability>
+  <Capability Min="99" Max="109">Magenta</Capability>
+  <Capability Min="110" Max="120">Orange+Red</Capability>
+  <Capability Min="121" Max="127">LightBlue+Magenta</Capability>
+  <Capability Min="128" Max="255" Preset="SlowToFast">Rainbow</Capability>
+ </Channel>
+ <Channel Name="Gobo">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="11">Open</Capability>
+  <Capability Min="12" Max="23">1</Capability>
+  <Capability Min="24" Max="35">2</Capability>
+  <Capability Min="36" Max="47">3</Capability>
+  <Capability Min="48" Max="59">4</Capability>
+  <Capability Min="60" Max="71">5</Capability>
+  <Capability Min="72" Max="83">6</Capability>
+  <Capability Min="84" Max="95">7</Capability>
+  <Capability Min="96" Max="107">8</Capability>
+  <Capability Min="108" Max="119">9</Capability>
+  <Capability Min="120" Max="127">10</Capability>
+  <Capability Min="128" Max="255" Preset="SlowToFast">Rotation</Capability>
+ </Channel>
+ <Channel Name="Shutter">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="7">Blackout</Capability>
+  <Capability Min="8" Max="15">Open</Capability>
+  <Capability Min="16" Max="131" Preset="StrobeSlowToFast">Strobe</Capability>
+  <Capability Min="132" Max="247" Preset="SlowToFast">Gobo Shake</Capability>
+  <Capability Min="248" Max="255">Open</Capability>
+ </Channel>
+ <Mode Name="5-Kanal">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Color</Channel>
+  <Channel Number="3">Gobo</Channel>
+  <Channel Number="4">Shutter</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="HMI 250W" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Mirror" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="250" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

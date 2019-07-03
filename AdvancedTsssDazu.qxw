@@ -157,7 +157,9 @@
   <Function ID="6" Type="Scene" Name="Fade" Path="Hex">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">6,255,7,53,8,166,9,245,10,95</FixtureVal>
-   <FixtureVal ID="1">6,255,7,53,8,166,9,245,10,95</FixtureVal>
+   <FixtureVal ID="1">6,255,7,58,8,166,9,245,10,95</FixtureVal>
+   <FixtureVal ID="9">0,101,1,201,2,139</FixtureVal>
+   <FixtureVal ID="8">0,101,1,201,2,132</FixtureVal>
   </Function>
   <Function ID="7" Type="Scene" Name="Aus" Path="Hex/1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -637,7 +639,7 @@
   <Function ID="82" Type="Scene" Name="Pink" Path="Hex/2">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,255,5,255,6,255,7,47,8,0</FixtureVal>
-   <FixtureVal ID="9">0,0,3,255,4,255,7,82</FixtureVal>
+   <FixtureVal ID="9">0,0,3,255,4,255,7,78</FixtureVal>
   </Function>
   <Function ID="83" Type="Scene" Name="Rot" Path="Hex/2">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
