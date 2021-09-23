@@ -3,8 +3,8 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.2</Version>
-  <Author>Sven Rahn</Author>
+  <Version>4.12.4</Version>
+  <Author>sven3</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
@@ -159,7 +159,7 @@
     <StartOffset>90</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="16000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="6400"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -413,7 +413,7 @@
    <FixtureVal ID="2">0,134,1,107</FixtureVal>
   </Function>
   <Function ID="73" Type="Chaser" Name="SL Punkte" Path="Scanner">
-   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="400"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -427,7 +427,7 @@
    <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">72</Step>
   </Function>
   <Function ID="74" Type="Chaser" Name="SR Punkte" Path="Scanner">
-   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="400"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -582,7 +582,7 @@
      <Action>Toggle</Action>
      <Key>X</Key>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="130"/>
+     <Input Universe="0" Channel="135"/>
     </Button>
     <Button Caption="Aus" ID="23" Icon="">
      <WindowState Visible="True" X="185" Y="155" Width="90" Height="95"/>
@@ -596,7 +596,7 @@
      <Function ID="95"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="131"/>
+     <Input Universe="0" Channel="130"/>
     </Button>
     <Button Caption="Langsam s" ID="24" Icon="">
      <WindowState Visible="True" X="15" Y="55" Width="190" Height="80"/>
@@ -625,7 +625,7 @@
      <Action>Toggle</Action>
      <Key>D</Key>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="129"/>
+     <Input Universe="0" Channel="134"/>
     </Button>
     <Button Caption="Still" ID="35" Icon="">
      <WindowState Visible="True" X="290" Y="155" Width="120" Height="95"/>
@@ -670,7 +670,6 @@
      <Action>Toggle</Action>
      <Key>Y</Key>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="130"/>
     </Button>
     <Button Caption="Aus" ID="30" Icon="">
      <WindowState Visible="True" X="220" Y="155" Width="185" Height="80"/>
@@ -684,7 +683,7 @@
      <Function ID="97"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="131"/>
+     <Input Universe="0" Channel="128"/>
     </Button>
     <Button Caption="Lassajous e" ID="31" Icon="">
      <WindowState Visible="True" X="15" Y="60" Width="195" Height="80"/>
@@ -699,7 +698,7 @@
      <Action>Toggle</Action>
      <Key>E</Key>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="128"/>
+     <Input Universe="0" Channel="132"/>
     </Button>
     <Button Caption="Punkte r" ID="32" Icon="">
      <WindowState Visible="True" X="220" Y="60" Width="185" Height="80"/>
@@ -726,14 +725,14 @@
      </Appearance>
      <Visibility>96</Visibility>
      <AbsoluteValue Minimum="0" Maximum="10000"/>
-     <Time>1000</Time>
+     <Time>400</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">74</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">73</Function>
      <Function FadeIn="0" FadeOut="0" Duration="10">13</Function>
      <Preset ID="16">
       <Name>400ms</Name>
       <Value>400</Value>
-      <Input Universe="0" Channel="128"/>
+      <Input Universe="0" Channel="132"/>
       <Key>1</Key>
      </Preset>
      <Preset ID="17">
@@ -744,7 +743,6 @@
      <Preset ID="18">
       <Name>200ms</Name>
       <Value>200</Value>
-      <Input Universe="0" Channel="129"/>
      </Preset>
      <Preset ID="19">
       <Name>1s</Name>
@@ -820,7 +818,7 @@
      <Action>Toggle</Action>
      <Key>C</Key>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="130"/>
+     <Input Universe="0" Channel="135"/>
     </Button>
     <Button Caption="Aus" ID="2" Icon="">
      <WindowState Visible="True" X="10" Y="230" Width="140" Height="75"/>
@@ -834,7 +832,7 @@
      <Function ID="46"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="131"/>
+     <Input Universe="0" Channel="129"/>
     </Button>
     <Button Caption="Bunt f" ID="3" Icon="">
      <WindowState Visible="True" X="10" Y="50" Width="140" Height="75"/>
@@ -849,7 +847,7 @@
      <Action>Toggle</Action>
      <Key>F</Key>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="129"/>
+     <Input Universe="0" Channel="133"/>
     </Button>
     <SoloFrame Caption="" ID="9">
      <Appearance>
@@ -905,7 +903,6 @@
       <Function ID="29"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="129"/>
      </Button>
     </SoloFrame>
    </SoloFrame>
