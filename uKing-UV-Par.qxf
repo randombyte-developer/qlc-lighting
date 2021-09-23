@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.2</Version>
+  <Author>Sven Rahn</Author>
+ </Creator>
+ <Manufacturer>uKing</Manufacturer>
+ <Model>UV Par</Model>
+ <Type>Dimmer</Type>
+ <Channel Name="Master" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Zone 1" Preset="IntensityUV"/>
+ <Channel Name="Zone 2" Preset="IntensityUV"/>
+ <Channel Name="Zone 3" Preset="IntensityUV"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Mode">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Mode Name="6-Channels">
+  <Channel Number="0">Master</Channel>
+  <Channel Number="1">Zone 1</Channel>
+  <Channel Number="2">Zone 2</Channel>
+  <Channel Number="3">Zone 3</Channel>
+  <Channel Number="4">Strobe</Channel>
+  <Channel Number="5">Mode</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
