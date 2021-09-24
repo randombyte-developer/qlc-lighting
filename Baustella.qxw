@@ -10,9 +10,7 @@
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" Line="0"/>
-    <Output Plugin="DMX USB" Line="0">
-     <PluginParameters UniverseChannels="205"/>
-    </Output>
+    <Output Plugin="DMX USB" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -264,7 +262,7 @@
   </Function>
   <Function ID="29" Type="Scene" Name="P Rot" Path="Pinspot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,255,1,255,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="4">1,255,2,0,3,0,4,0</FixtureVal>
   </Function>
   <Function ID="30" Type="Scene" Name="P Strobe" Path="Pinspot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -272,7 +270,7 @@
   </Function>
   <Function ID="31" Type="Scene" Name="P Blau" Path="Pinspot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,242,1,0,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="4">1,0,2,0,3,255,4,0</FixtureVal>
   </Function>
   <Function ID="32" Type="Scene" Name="SL Aus" Path="Scanner/Links/Farben">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -280,7 +278,7 @@
   </Function>
   <Function ID="33" Type="Scene" Name="P Grün" Path="Pinspot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,255,1,0,2,255,3,0,4,0</FixtureVal>
+   <FixtureVal ID="4">1,0,2,255,3,0,4,0</FixtureVal>
   </Function>
   <Function ID="34" Type="Collection" Name="S Diskokugel" Path="Scanner">
    <Step Number="0">47</Step>
@@ -292,15 +290,15 @@
   </Function>
   <Function ID="36" Type="Scene" Name="P Lila" Path="Pinspot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,252,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="4">1,255,2,0,3,255,4,0</FixtureVal>
   </Function>
   <Function ID="37" Type="Scene" Name="P Gelb" Path="Pinspot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,255,1,255,2,255,3,0,4,0</FixtureVal>
+   <FixtureVal ID="4">1,255,2,255,3,0,4,0</FixtureVal>
   </Function>
   <Function ID="38" Type="Scene" Name="P Türkis" Path="Pinspot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,255,1,0,2,255,3,255,4,0</FixtureVal>
+   <FixtureVal ID="4">1,0,2,255,3,255,4,0</FixtureVal>
   </Function>
   <Function ID="39" Type="Scene" Name="UV Aus" Path="UV">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -356,6 +354,14 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,109,1,166</FixtureVal>
   </Function>
+  <Function ID="50" Type="Scene" Name="P Master Hell" Path="Pinspot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,134</FixtureVal>
+  </Function>
+  <Function ID="51" Type="Scene" Name="P Master Dunkel" Path="Pinspot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,56</FixtureVal>
+  </Function>
   <Function ID="52" Type="Scene" Name="SR 3" Path="Scanner/Rechts/Positionen">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,216,1,125</FixtureVal>
@@ -363,6 +369,14 @@
   <Function ID="53" Type="Scene" Name="SR 6" Path="Scanner/Rechts/Positionen">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,181,1,144</FixtureVal>
+  </Function>
+  <Function ID="54" Type="Collection" Name="P Bunt Hell" Path="Pinspot">
+   <Step Number="0">40</Step>
+   <Step Number="1">50</Step>
+  </Function>
+  <Function ID="55" Type="Collection" Name="P Bunt Dunkel" Path="Pinspot">
+   <Step Number="0">40</Step>
+   <Step Number="1">51</Step>
   </Function>
   <Function ID="56" Type="Scene" Name="SR 2" Path="Scanner/Rechts/Positionen">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -843,11 +857,10 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
      </Appearance>
-     <Function ID="40"/>
+     <Function ID="54"/>
      <Action>Toggle</Action>
      <Key>F</Key>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="133"/>
     </Button>
     <SoloFrame Caption="" ID="9">
      <Appearance>
@@ -905,6 +918,20 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
     </SoloFrame>
+    <Button Caption="Bunt dunkel" ID="4" Icon="">
+     <WindowState Visible="True" X="320" Y="235" Width="140" Height="75"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4293969247</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="54"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="133"/>
+    </Button>
    </SoloFrame>
    <SoloFrame Caption="Nebel" ID="11">
     <Appearance>
@@ -950,7 +977,7 @@
     </Button>
    </SoloFrame>
    <Button Caption="Aus a" ID="14" Icon="">
-    <WindowState Visible="True" X="20" Y="460" Width="120" Height="95"/>
+    <WindowState Visible="True" X="20" Y="450" Width="120" Height="95"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
