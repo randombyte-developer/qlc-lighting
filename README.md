@@ -13,7 +13,7 @@ Some QLC+ project files
 ### QLC+
 
 | Number | Function |
----------------------
+|--------|----------|
 | 129 | Scanner off |
 | 130 | Pinspot off |
 | 131 | Quad Phase off |
