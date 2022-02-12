@@ -3,16 +3,14 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.4</Version>
-  <Author>sven3</Author>
+  <Version>4.12.2</Version>
+  <Author>Sven Rahn</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" Line="1"/>
-    <Output Plugin="DMX USB" Line="0">
-     <PluginParameters UniverseChannels="205"/>
-    </Output>
+    <Output Plugin="DMX USB" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -76,8 +74,28 @@
    <ID>5</ID>
    <Name>UV Par</Name>
    <Universe>0</Universe>
-   <Address>199</Address>
+   <Address>149</Address>
    <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>TSSS</Model>
+   <Mode>Normal</Mode>
+   <ID>6</ID>
+   <Name>TSSS #1</Name>
+   <Universe>0</Universe>
+   <Address>199</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>TSSS</Model>
+   <Mode>Normal</Mode>
+   <ID>7</ID>
+   <Name>TSSS #2</Name>
+   <Universe>0</Universe>
+   <Address>249</Address>
+   <Channels>8</Channels>
   </Fixture>
   <Function ID="0" Type="Scene" Name="QP Rot" Path="Quad Phase/Farben">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -111,6 +129,7 @@
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">0</Step>
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">1</Step>
    <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">2</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">101</Step>
   </Function>
   <Function ID="7" Type="Chaser" Name="QP Langsam drehen" Path="Quad Phase">
    <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
@@ -358,6 +377,46 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,109,1,166</FixtureVal>
   </Function>
+  <Function ID="50" Type="Scene" Name="TL Rot" Path="TSSS/Links/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">4,255,5,0,6,0,7,0</FixtureVal>
+  </Function>
+  <Function ID="51" Type="EFX" Name="T Fade">
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>7</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>45</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>1</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
   <Function ID="52" Type="Scene" Name="SR 3" Path="Scanner/Rechts/Positionen">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,216,1,125</FixtureVal>
@@ -365,6 +424,14 @@
   <Function ID="53" Type="Scene" Name="SR 6" Path="Scanner/Rechts/Positionen">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,181,1,144</FixtureVal>
+  </Function>
+  <Function ID="54" Type="Scene" Name="TR Dunkel" Path="TSSS/Rechts">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,0,3,100</FixtureVal>
+  </Function>
+  <Function ID="55" Type="Scene" Name="TR Hell" Path="TSSS/Rechts">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,0,3,255</FixtureVal>
   </Function>
   <Function ID="56" Type="Scene" Name="SR 2" Path="Scanner/Rechts/Positionen">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -575,6 +642,85 @@
    <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">62</Step>
    <Step Number="5" FadeIn="0" Hold="2000" FadeOut="0">99</Step>
   </Function>
+  <Function ID="101" Type="Scene" Name="QP Bunt - 4" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">4,0,5,0,6,0,7,0</FixtureVal>
+  </Function>
+  <Function ID="102" Type="Scene" Name="TL Grün" Path="TSSS/Links/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">4,0,5,255,6,0,7,0</FixtureVal>
+  </Function>
+  <Function ID="103" Type="Scene" Name="TL Blau" Path="TSSS/Links/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">4,0,5,0,6,255,7,0</FixtureVal>
+  </Function>
+  <Function ID="104" Type="Scene" Name="TL Weiß" Path="TSSS/Links/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">4,0,5,0,6,255,7,0</FixtureVal>
+  </Function>
+  <Function ID="105" Type="Chaser" Name="TL Bunt" Path="TSSS">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">103</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">102</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">50</Step>
+  </Function>
+  <Function ID="106" Type="Collection" Name="TL Bunt H" Path="TSSS">
+   <Step Number="0">105</Step>
+   <Step Number="1">107</Step>
+  </Function>
+  <Function ID="107" Type="Scene" Name="TL Hell" Path="TSSS/Links">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,0,3,255</FixtureVal>
+  </Function>
+  <Function ID="108" Type="Scene" Name="T Strobe" Path="TSSS">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,103,2,143,3,255,7,255</FixtureVal>
+   <FixtureVal ID="7">0,103,2,143,3,255,7,255</FixtureVal>
+  </Function>
+  <Function ID="109" Type="Scene" Name="TL Dunkel" Path="TSSS/Links">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,0,3,100</FixtureVal>
+  </Function>
+  <Function ID="110" Type="Collection" Name="TL Bunt D" Path="TSSS">
+   <Step Number="0">105</Step>
+   <Step Number="1">109</Step>
+  </Function>
+  <Function ID="111" Type="Scene" Name="TR Blau" Path="TSSS/Rechts/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,0,5,0,6,255,7,0</FixtureVal>
+  </Function>
+  <Function ID="112" Type="Scene" Name="TR Grün" Path="TSSS/Rechts/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,0,5,255,6,0,7,0</FixtureVal>
+  </Function>
+  <Function ID="113" Type="Scene" Name="TR Rot" Path="TSSS/Rechts/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,255,5,0,6,0,7,0</FixtureVal>
+  </Function>
+  <Function ID="114" Type="Chaser" Name="TR Bunt" Path="TSSS">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">111</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">112</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">113</Step>
+  </Function>
+  <Function ID="115" Type="Scene" Name="TR Weiß" Path="TSSS/Rechts/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,0,5,0,6,255,7,0</FixtureVal>
+  </Function>
+  <Function ID="116" Type="Collection" Name="TR Bunt H" Path="TSSS">
+   <Step Number="0">114</Step>
+   <Step Number="1">55</Step>
+  </Function>
+  <Function ID="117" Type="Collection" Name="TR Bunt D" Path="TSSS">
+   <Step Number="0">114</Step>
+   <Step Number="1">54</Step>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -679,7 +825,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
    </SoloFrame>
-   <SoloFrame Caption="Scanner" ID="33">
+   <SoloFrame Caption="Pars" ID="33">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -738,20 +884,6 @@
      <Key>E</Key>
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="132"/>
-    </Button>
-    <Button Caption="Punkte r" ID="32" Icon="">
-     <WindowState Visible="True" X="220" Y="60" Width="185" Height="80"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4293969247</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="75"/>
-     <Action>Toggle</Action>
-     <Key>R</Key>
-     <Intensity Adjust="False">100</Intensity>
     </Button>
     <SpeedDial Caption="Bewegung" ID="34">
      <WindowState Visible="True" X="360" Y="260" Width="250" Height="110"/>
@@ -813,20 +945,6 @@
       <Key>2</Key>
      </Preset>
     </SpeedDial>
-    <Button Caption="Diskokugel w" ID="13" Icon="">
-     <WindowState Visible="True" X="410" Y="60" Width="215" Height="80"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4293969247</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="34"/>
-     <Action>Toggle</Action>
-     <Key>W</Key>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
    </SoloFrame>
    <SoloFrame Caption="Pinspot" ID="6">
     <Appearance>
