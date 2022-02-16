@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.2</Version>
+  <Author>Sven Rahn</Author>
+ </Creator>
+ <Manufacturer>lightmaXX</Manufacturer>
+ <Model>DJ Scan LED</Model>
+ <Type>Scanner</Type>
+ <Channel Name="Pan" Default="127" Preset="PositionPan"/>
+ <Channel Name="Tilt" Default="127" Preset="PositionTilt"/>
+ <Channel Name="Color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="13" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="14" Max="27" Preset="ColorMacro" Res1="#ffff00">Yellow</Capability>
+  <Capability Min="28" Max="41" Preset="ColorMacro" Res1="#ff00ff">Pink</Capability>
+  <Capability Min="42" Max="55" Preset="ColorMacro" Res1="#00aa00">Green</Capability>
+  <Capability Min="56" Max="69" Preset="ColorMacro" Res1="#aa00ff">Purple</Capability>
+  <Capability Min="70" Max="83" Preset="ColorMacro" Res1="#00aaff">Blue</Capability>
+  <Capability Min="84" Max="97" Preset="ColorMacro" Res1="#35f5ff">Light Blue</Capability>
+  <Capability Min="98" Max="111" Preset="ColorMacro" Res1="#ff5500">Orange</Capability>
+  <Capability Min="112" Max="127" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="128" Max="191" Preset="RotationClockwiseFastToSlow">Rainbow forward</Capability>
+  <Capability Min="192" Max="255" Preset="RotationCounterClockwiseSlowToFast">Rainbow backward</Capability>
+ </Channel>
+ <Channel Name="Gobo">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="8" Preset="GoboMacro">Open</Capability>
+  <Capability Min="9" Max="17" Preset="GoboMacro">Flower</Capability>
+  <Capability Min="18" Max="26" Preset="GoboMacro">Stars</Capability>
+  <Capability Min="27" Max="35" Preset="GoboMacro">Love</Capability>
+  <Capability Min="36" Max="44" Preset="GoboMacro">Tornados</Capability>
+  <Capability Min="45" Max="53" Preset="GoboMacro">Flowers</Capability>
+  <Capability Min="54" Max="62" Preset="GoboMacro">Tunnel</Capability>
+  <Capability Min="63" Max="71" Preset="GoboMacro">Spiral</Capability>
+  <Capability Min="72" Max="80" Preset="GoboMacro">Snow flake</Capability>
+  <Capability Min="81" Max="89" Preset="GoboMacro">Leaf</Capability>
+  <Capability Min="90" Max="98" Preset="GoboMacro">Sunflower</Capability>
+  <Capability Min="99" Max="107" Preset="GoboMacro">Adidas</Capability>
+  <Capability Min="108" Max="116" Preset="GoboShakeMacro">Flower</Capability>
+  <Capability Min="117" Max="125" Preset="GoboShakeMacro">Stars</Capability>
+  <Capability Min="126" Max="134" Preset="GoboShakeMacro">Love</Capability>
+  <Capability Min="135" Max="143" Preset="GoboShakeMacro">Tornados</Capability>
+  <Capability Min="144" Max="152" Preset="GoboShakeMacro">Flowers</Capability>
+  <Capability Min="153" Max="161" Preset="GoboShakeMacro">Tunnel</Capability>
+  <Capability Min="162" Max="170" Preset="GoboShakeMacro">Spiral</Capability>
+  <Capability Min="171" Max="179">Snow flake</Capability>
+  <Capability Min="180" Max="188" Preset="GoboShakeMacro">Leaf</Capability>
+  <Capability Min="189" Max="197" Preset="GoboShakeMacro">Sunflower</Capability>
+  <Capability Min="198" Max="206" Preset="GoboShakeMacro">Adidas</Capability>
+  <Capability Min="207" Max="255" Preset="RotationClockwiseSlowToFast">Rotate</Capability>
+ </Channel>
+ <Channel Name="Strobe" Default="10">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="9" Preset="ShutterClose">Closed</Capability>
+  <Capability Min="10" Max="19" Preset="ShutterOpen">Open</Capability>
+  <Capability Min="20" Max="127" Preset="StrobeFreqRange" Res1="0.4" Res2="60">Strobe</Capability>
+  <Capability Min="128" Max="137" Preset="ShutterOpen">Open</Capability>
+  <Capability Min="138" Max="201" Preset="StrobeRandomSlowToFast">Random Strobe</Capability>
+  <Capability Min="202" Max="255" Preset="ShutterOpen">Open</Capability>
+ </Channel>
+ <Channel Name="Master dimmer" Default="255">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="4" Preset="ShutterClose">Off</Capability>
+  <Capability Min="5" Max="255">Dimmer</Capability>
+ </Channel>
+ <Channel Name="Programs">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="29">No macro</Capability>
+  <Capability Min="60" Max="79">Wheels reset</Capability>
+  <Capability Min="80" Max="99">Motors reset</Capability>
+  <Capability Min="100" Max="119">Program 1</Capability>
+  <Capability Min="120" Max="139">Program 2</Capability>
+  <Capability Min="140" Max="159">Program 3</Capability>
+  <Capability Min="160" Max="179">Program 4</Capability>
+  <Capability Min="180" Max="199">Program 5</Capability>
+  <Capability Min="200" Max="219">Program 6</Capability>
+  <Capability Min="220" Max="239">Program 7</Capability>
+  <Capability Min="240" Max="255">Program 8</Capability>
+ </Channel>
+ <Mode Name="7 Channels">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Color</Channel>
+  <Channel Number="3">Gobo</Channel>
+  <Channel Number="4">Strobe</Channel>
+  <Channel Number="5">Master dimmer</Channel>
+  <Channel Number="6">Programs</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="3" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="25" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
