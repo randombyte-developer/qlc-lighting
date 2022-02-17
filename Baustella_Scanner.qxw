@@ -309,6 +309,28 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">2,123</FixtureVal>
   </Function>
+  <Function ID="49" Type="Chaser" Name="S Fade L Delayed" Path="Scanner">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">50</Step>
+   <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0">50</Step>
+  </Function>
+  <Function ID="50" Type="Collection" Name="S Fade L" Path="Scanner">
+   <Step Number="0">67</Step>
+   <Step Number="1">72</Step>
+   <Step Number="2">51</Step>
+  </Function>
+  <Function ID="51" Type="Sequence" Name="S F Dimmer L" BoundScene="53">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="250" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="400" Hold="3000" FadeOut="0" Values="1">2:5,255</Step>
+   <Step Number="2" FadeIn="349" Hold="1" FadeOut="0" Values="1"/>
+  </Function>
   <Function ID="52" Type="Collection" Name="S Bunt Punkte Dunkel" Path="Scanner">
    <Step Number="0">67</Step>
    <Step Number="1">68</Step>
@@ -316,6 +338,15 @@
    <Step Number="3">73</Step>
    <Step Number="4">13</Step>
    <Step Number="5">14</Step>
+  </Function>
+  <Function ID="53" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,0</FixtureVal>
+  </Function>
+  <Function ID="54" Type="Collection" Name="S Fade" Path="Scanner">
+   <Step Number="0">13</Step>
+   <Step Number="1">49</Step>
+   <Step Number="2">76</Step>
   </Function>
   <Function ID="57" Type="Scene" Name="P Blau H" Path="Pinspot/Hell">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -344,10 +375,9 @@
   <Function ID="66" Type="Scene" Name="" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">0,0,1,0</FixtureVal>
-   <FixtureVal ID="3">0,0,1,0</FixtureVal>
   </Function>
   <Function ID="67" Type="Sequence" Name="S Positionen L" BoundScene="66">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -357,11 +387,11 @@
    <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,68,1,197</Step>
    <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,65,1,133</Step>
    <Step Number="5" FadeIn="0" Hold="0" FadeOut="0" Values="2">2:0,80,1,92</Step>
-   <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0" Values="4">2:0,111,1,80:3:0,71,1,92</Step>
-   <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0" Values="4">2:0,131,1,129:3:0,71,1,92</Step>
+   <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,111,1,80</Step>
+   <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,131,1,129</Step>
   </Function>
   <Function ID="68" Type="Sequence" Name="S Positionen R" BoundScene="69">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -426,7 +456,7 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="250" FadeOut="0" Values="1"/>
-   <Step Number="1" FadeIn="400" Hold="1000" FadeOut="0" Values="2">3:5,255,5,255</Step>
+   <Step Number="1" FadeIn="400" Hold="3000" FadeOut="0" Values="1">3:5,255</Step>
    <Step Number="2" FadeIn="349" Hold="1" FadeOut="0" Values="1"/>
   </Function>
   <Function ID="76" Type="Collection" Name="S Fade R" Path="Scanner">
@@ -636,7 +666,7 @@
      </Appearance>
      <Visibility>96</Visibility>
      <AbsoluteValue Minimum="0" Maximum="10000"/>
-     <Time>2000</Time>
+     <Time>4000</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">68</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">67</Function>
      <Preset ID="20">
@@ -710,7 +740,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
      </Appearance>
-     <Function ID="76"/>
+     <Function ID="54"/>
      <Action>Toggle</Action>
      <Key>E</Key>
      <Intensity Adjust="False">100</Intensity>
