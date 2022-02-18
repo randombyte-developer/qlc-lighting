@@ -17,7 +17,7 @@ Some QLC+ project files
 | 129 | Scanner off |
 | 130 | Pinspot off |
 | 131 | Quad Phase off |
-| 133 | Scanner on |
-| 134 | Pinspot on |
-| 135 | Quad Phase on |
-| 136 | Strobe on |
+| 137 | Scanner Fast |
+| 138 | Scanner Slow |
+| 139 | Quad Phase on |
+| 140 | Strobe on |
