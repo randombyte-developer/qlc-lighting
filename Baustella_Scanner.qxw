@@ -4,14 +4,14 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.4</Version>
-  <Author>sven3</Author>
+  <Author>Baustella</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" Line="0"/>
+    <Input Plugin="MIDI" Line="1"/>
     <Output Plugin="DMX USB" Line="0">
-     <PluginParameters UniverseChannels="356"/>
+     <PluginParameters UniverseChannels="105"/>
     </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
@@ -45,7 +45,7 @@
    <ID>2</ID>
    <Name>DJ Scan LED Links</Name>
    <Universe>0</Universe>
-   <Address>299</Address>
+   <Address>39</Address>
    <Channels>7</Channels>
    <ExcludeFade>2,3</ExcludeFade>
   </Fixture>
@@ -56,7 +56,7 @@
    <ID>3</ID>
    <Name>DJ Scan LED Rechts</Name>
    <Universe>0</Universe>
-   <Address>349</Address>
+   <Address>49</Address>
    <Channels>7</Channels>
    <ExcludeFade>2,3</ExcludeFade>
   </Fixture>
@@ -78,7 +78,7 @@
    <ID>5</ID>
    <Name>UV Par</Name>
    <Universe>0</Universe>
-   <Address>149</Address>
+   <Address>69</Address>
    <Channels>6</Channels>
   </Fixture>
   <Function ID="0" Type="Scene" Name="QP Rot" Path="Quad Phase/Farben">
@@ -162,8 +162,8 @@
   </Function>
   <Function ID="15" Type="Scene" Name="S Strobe" Path="Scanner">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="3">0,127,1,127,2,7,3,0,4,194,5,255</FixtureVal>
-   <FixtureVal ID="2">0,127,1,127,2,7,3,0,4,194,5,255</FixtureVal>
+   <FixtureVal ID="3">0,132,1,210,2,7,3,0,4,194,5,255</FixtureVal>
+   <FixtureVal ID="2">0,131,1,199,2,7,3,0,4,194,5,255</FixtureVal>
   </Function>
   <Function ID="16" Type="Scene" Name="S Aus" Path="Scanner">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -213,7 +213,7 @@
   </Function>
   <Function ID="27" Type="Scene" Name="H An" Path="Hazer">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="0">0,17</FixtureVal>
+   <FixtureVal ID="0">0,6</FixtureVal>
   </Function>
   <Function ID="28" Type="Scene" Name="H Aus" Path="Hazer">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -377,32 +377,36 @@
    <FixtureVal ID="2">0,0,1,0</FixtureVal>
   </Function>
   <Function ID="67" Type="Sequence" Name="S Positionen L" BoundScene="66">
-   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2">2:0,184,1,83</Step>
-   <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,191,1,165</Step>
-   <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,135,1,188</Step>
-   <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,68,1,197</Step>
-   <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,65,1,133</Step>
-   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0" Values="2">2:0,80,1,92</Step>
-   <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,111,1,80</Step>
-   <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,131,1,129</Step>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2">2:0,121,1,125</Step>
+   <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,180,1,104</Step>
+   <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,164,1,173</Step>
+   <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,97,1,109</Step>
+   <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,125,1,49</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0" Values="2">2:0,128,1,149</Step>
+   <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,98,1,178</Step>
+   <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0" Values="2">2:0,154,1,97</Step>
+   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0" Values="2">2:0,107,1,49</Step>
+   <Step Number="9" FadeIn="0" Hold="1000" FadeOut="0" Values="2">2:0,111,1,92</Step>
   </Function>
   <Function ID="68" Type="Sequence" Name="S Positionen R" BoundScene="69">
-   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,133,1,69</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,208,1,106</Step>
-   <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,160,1,160</Step>
-   <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,133,1,170</Step>
-   <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,107,1,165</Step>
-   <Step Number="5" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,47,1,133</Step>
-   <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,84,1,96</Step>
-   <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,124,1,140</Step>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,150,1,116</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="2">3:0,112,1,106</Step>
+   <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,174,1,130</Step>
+   <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,170,1,183</Step>
+   <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,100,1,201</Step>
+   <Step Number="5" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,157,1,97</Step>
+   <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,128,1,85</Step>
+   <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0" Values="2">3:0,91,1,99</Step>
+   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0" Values="2">3:0,98,1,97</Step>
+   <Step Number="9" FadeIn="0" Hold="1000" FadeOut="0" Values="2">3:0,125,1,111</Step>
   </Function>
   <Function ID="69" Type="Scene" Name="S" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -421,7 +425,7 @@
    <FixtureVal ID="2">2,0</FixtureVal>
   </Function>
   <Function ID="72" Type="Sequence" Name="S Bunt L" BoundScene="71">
-   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -434,7 +438,7 @@
    <Step Number="6" FadeIn="0" Hold="0" FadeOut="0" Values="1">2:2,119</Step>
   </Function>
   <Function ID="73" Type="Sequence" Name="S Bunt R" BoundScene="74">
-   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -656,7 +660,7 @@
      <Input Universe="0" Channel="136"/>
     </Button>
     <SpeedDial Caption="Bewegung" ID="34">
-     <WindowState Visible="True" X="160" Y="270" Width="290" Height="105"/>
+     <WindowState Visible="True" X="220" Y="270" Width="290" Height="105"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -666,7 +670,7 @@
      </Appearance>
      <Visibility>96</Visibility>
      <AbsoluteValue Minimum="0" Maximum="10000"/>
-     <Time>4000</Time>
+     <Time>1000</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">68</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">67</Function>
      <Preset ID="20">
@@ -676,24 +680,24 @@
      <Preset ID="21">
       <Name>500ms</Name>
       <Value>500</Value>
+      <Input Universe="0" Channel="136"/>
      </Preset>
      <Preset ID="22">
       <Name>1s</Name>
       <Value>1000</Value>
-      <Input Universe="0" Channel="136"/>
      </Preset>
      <Preset ID="23">
       <Name>2s</Name>
       <Value>2000</Value>
+      <Input Universe="0" Channel="137"/>
      </Preset>
      <Preset ID="24">
       <Name>4s</Name>
       <Value>4000</Value>
-      <Input Universe="0" Channel="137"/>
      </Preset>
     </SpeedDial>
     <SpeedDial Caption="Farbwechsel" ID="0">
-     <WindowState Visible="True" X="20" Y="270" Width="130" Height="105"/>
+     <WindowState Visible="True" X="20" Y="270" Width="185" Height="105"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -703,7 +707,7 @@
      </Appearance>
      <Visibility>32</Visibility>
      <AbsoluteValue Minimum="0" Maximum="10000"/>
-     <Time>4000</Time>
+     <Time>2000</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">73</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">72</Function>
      <Preset ID="17">
@@ -719,6 +723,10 @@
      <Preset ID="19">
       <Name>4s</Name>
       <Value>4000</Value>
+     </Preset>
+     <Preset ID="20">
+      <Name>2s</Name>
+      <Value>2000</Value>
       <Input Universe="0" Channel="137"/>
      </Preset>
     </SpeedDial>
