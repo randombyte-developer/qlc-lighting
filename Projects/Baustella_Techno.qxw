@@ -25,6 +25,7 @@
    <Universe>0</Universe>
    <Address>5</Address>
    <Channels>1</Channels>
+   <ForcedHTP>0</ForcedHTP>
   </Fixture>
   <Fixture>
    <Manufacturer>American DJ</Manufacturer>
@@ -35,6 +36,7 @@
    <Universe>0</Universe>
    <Address>20</Address>
    <Channels>4</Channels>
+   <ForcedHTP>3</ForcedHTP>
   </Fixture>
   <Fixture>
    <Manufacturer>lightmaXX</Manufacturer>
@@ -67,6 +69,7 @@
    <Universe>0</Universe>
    <Address>99</Address>
    <Channels>6</Channels>
+   <ForcedHTP>0</ForcedHTP>
    <ForcedLTP>1,2,3,4</ForcedLTP>
   </Fixture>
   <Fixture>
