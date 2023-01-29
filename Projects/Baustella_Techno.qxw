@@ -555,8 +555,34 @@
   </Function>
   <Function ID="87" Type="Scene" Name="S Blinder" Path="Scanner">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="3">0,182,1,167,2,106,3,0,4,10,5,255</FixtureVal>
+   <FixtureVal ID="3">0,182,1,167,2,102,3,0,4,10,5,255</FixtureVal>
    <FixtureVal ID="2">0,78,1,185,2,105,3,0,4,10,5,255</FixtureVal>
+  </Function>
+  <Function ID="88" Type="Scene" Name="QP Weiß Flash" Path="Quad Phase/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,247,1,4,3,51</FixtureVal>
+  </Function>
+  <Function ID="89" Type="Scene" Name="P Weiß Flash" Path="Pinspot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+  </Function>
+  <Function ID="90" Type="Scene" Name="S Weiß Flash L" Path="Scanner">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,78,1,185,2,7,3,0,4,255,5,255</FixtureVal>
+  </Function>
+  <Function ID="91" Type="Scene" Name="S Weiß Flash R" Path="Scanner">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,182,1,167,2,7,3,0,4,255,5,255</FixtureVal>
+  </Function>
+  <Function ID="92" Type="Chaser" Name="Flash Chase" Path="Auto">
+   <Speed FadeIn="0" FadeOut="0" Duration="80"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">90</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">91</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">89</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">88</Step>
   </Function>
   <Function ID="95" Type="Collection" Name="QP Aus" Path="Quad Phase">
    <Step Number="0">44</Step>
@@ -617,7 +643,7 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="Aus A" ID="14" Icon="">
+    <Button Caption="Aus" ID="14" Icon="">
      <WindowState Visible="True" X="10" Y="685" Width="120" Height="95"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -628,7 +654,6 @@
      </Appearance>
      <Function ID="45"/>
      <Action>Toggle</Action>
-     <Key>A</Key>
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Frame Caption="Quad Phase" ID="19">
@@ -791,7 +816,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="10" Y="385" Width="830" Height="240"/>
+     <WindowState Visible="True" X="10" Y="385" Width="565" Height="245"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -838,7 +863,7 @@
       <Key>S</Key>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Random Strobe" ID="15" Icon="">
+     <Button Caption="Random Strobe D" ID="15" Icon="">
       <WindowState Visible="True" X="185" Y="130" Width="170" Height="80"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
@@ -849,7 +874,107 @@
       </Appearance>
       <Function ID="81"/>
       <Action>Toggle</Action>
-      <Key>S</Key>
+      <Key>D</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Flash Chase F" ID="23" Icon="">
+      <WindowState Visible="True" X="365" Y="130" Width="170" Height="80"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="92"/>
+      <Action>Toggle</Action>
+      <Key>F</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </Frame>
+    <Frame Caption="Flash-Szenen" ID="12">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="635" Y="390" Width="435" Height="315"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Blinder" ID="11" Icon="">
+      <WindowState Visible="True" X="10" Y="45" Width="130" Height="75"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="87"/>
+      <Action>Flash</Action>
+      <Key>Space</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Scanner Links 4" ID="17" Icon="">
+      <WindowState Visible="True" X="10" Y="130" Width="185" Height="75"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="90"/>
+      <Action>Flash</Action>
+      <Key>Num+4</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Quad Phase 5" ID="20" Icon="">
+      <WindowState Visible="True" X="10" Y="220" Width="185" Height="75"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="88"/>
+      <Action>Flash</Action>
+      <Key>Num+5</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Scanner Rechts 6" ID="21" Icon="">
+      <WindowState Visible="True" X="215" Y="130" Width="185" Height="75"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="91"/>
+      <Action>Flash</Action>
+      <Key>Num+6</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Discokugel 8" ID="22" Icon="">
+      <WindowState Visible="True" X="215" Y="215" Width="185" Height="75"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="89"/>
+      <Action>Flash</Action>
+      <Key>Num+8</Key>
       <Intensity Adjust="False">100</Intensity>
      </Button>
     </Frame>
