@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.4</Version>
@@ -190,6 +190,24 @@
    <Step Number="0">5</Step>
    <Step Number="1">70</Step>
   </Function>
+  <Function ID="20" Type="Collection" Name="QP Langsam rot" Path="Quad Phase">
+   <Step Number="0">7</Step>
+   <Step Number="1">0</Step>
+  </Function>
+  <Function ID="21" Type="Chaser" Name="QP rot blau" Path="Quad Phase">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">0</Step>
+   <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">41</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">1</Step>
+   <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0">41</Step>
+  </Function>
+  <Function ID="22" Type="Collection" Name="QP Langsam rot blau" Path="Quad Phase">
+   <Step Number="0">7</Step>
+   <Step Number="1">21</Step>
+  </Function>
   <Function ID="23" Type="Scene" Name="UV An" Path="UV">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="5">0,109,1,255,2,255,3,255,4,0,5,0</FixtureVal>
@@ -227,9 +245,19 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,255,1,0,2,0,3,127,4,0</FixtureVal>
   </Function>
+  <Function ID="32" Type="Collection" Name="Rot" Path="Combi">
+   <Step Number="0">20</Step>
+  </Function>
   <Function ID="33" Type="Scene" Name="P Grün D" Path="Pinspot/Dunkel">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,255,1,0,2,117,3,0,4,0</FixtureVal>
+  </Function>
+  <Function ID="34" Type="Collection" Name="S Rotes Punkte Hell" Path="Scanner">
+   <Step Number="0">67</Step>
+   <Step Number="1">68</Step>
+   <Step Number="2">13</Step>
+   <Step Number="3">12</Step>
+   <Step Number="4">58</Step>
   </Function>
   <Function ID="35" Type="Collection" Name="QP Still" Path="Quad Phase">
    <Step Number="0">25</Step>
@@ -289,6 +317,16 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,0</FixtureVal>
   </Function>
+  <Function ID="47" Type="Scene" Name="S Rot" Path="Scanner/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">2,119</FixtureVal>
+   <FixtureVal ID="3">2,119</FixtureVal>
+  </Function>
+  <Function ID="48" Type="Scene" Name="S Orange" Path="Scanner/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">2,107</FixtureVal>
+   <FixtureVal ID="3">2,107</FixtureVal>
+  </Function>
   <Function ID="49" Type="Chaser" Name="S Fade L Delayed" Path="Scanner">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
@@ -328,9 +366,29 @@
    <Step Number="1">49</Step>
    <Step Number="2">76</Step>
   </Function>
+  <Function ID="55" Type="Scene" Name="S Pink" Path="Scanner/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">2,35</FixtureVal>
+   <FixtureVal ID="3">2,35</FixtureVal>
+  </Function>
+  <Function ID="56" Type="Scene" Name="S Lila" Path="Scanner/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">2,61</FixtureVal>
+   <FixtureVal ID="3">2,61</FixtureVal>
+  </Function>
   <Function ID="57" Type="Scene" Name="P Blau H" Path="Pinspot/Hell">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,255,1,0,2,0,3,255,4,0</FixtureVal>
+  </Function>
+  <Function ID="58" Type="Chaser" Name="S Rotes" Path="Scanner">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">47</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">56</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">55</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">48</Step>
   </Function>
   <Function ID="59" Type="Scene" Name="P Gelb H" Path="Pinspot/Hell">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -496,7 +554,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="965" Y="165" Width="230" Height="145"/>
+    <WindowState Visible="True" X="965" Y="165" Width="230" Height="145"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -505,7 +563,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="An" ID="10" Icon="">
-     <WindowState Visible="False" X="5" Y="40" Width="105" Height="95"/>
+     <WindowState Visible="True" X="5" Y="40" Width="105" Height="95"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -518,7 +576,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Aus" ID="12" Icon="">
-     <WindowState Visible="False" X="115" Y="40" Width="105" Height="95"/>
+     <WindowState Visible="True" X="115" Y="40" Width="105" Height="95"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -539,7 +597,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="965" Y="5" Width="230" Height="150"/>
+    <WindowState Visible="True" X="965" Y="5" Width="230" Height="150"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -548,7 +606,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="An" ID="16" Icon="">
-     <WindowState Visible="False" X="5" Y="40" Width="105" Height="95"/>
+     <WindowState Visible="True" X="5" Y="40" Width="105" Height="95"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -561,7 +619,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Aus" ID="17" Icon="">
-     <WindowState Visible="False" X="115" Y="40" Width="105" Height="95"/>
+     <WindowState Visible="True" X="115" Y="40" Width="105" Height="95"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -582,7 +640,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="5" Y="5" Width="955" Height="790"/>
+    <WindowState Visible="True" X="5" Y="5" Width="955" Height="790"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -590,21 +648,8 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="Auto 1" ID="20" Icon="">
-     <WindowState Visible="False" X="330" Y="635" Width="130" Height="100"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4293969247</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="18"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
     <Button Caption="Aus A" ID="14" Icon="">
-     <WindowState Visible="False" X="10" Y="685" Width="120" Height="95"/>
+     <WindowState Visible="True" X="10" Y="685" Width="120" Height="95"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -625,15 +670,15 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="435" Y="55" Width="210" Height="220"/>
+     <WindowState Visible="True" X="510" Y="45" Width="190" Height="290"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>False</ShowEnableButton>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <Button Caption="Langsam" ID="24" Icon="">
-      <WindowState Visible="False" X="10" Y="45" Width="190" Height="80"/>
+     <Button Caption="Bunt" ID="24" Icon="">
+      <WindowState Visible="True" X="5" Y="40" Width="125" Height="80"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -645,8 +690,8 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Schnell" ID="27" Icon="">
-      <WindowState Visible="False" X="10" Y="130" Width="190" Height="75"/>
+     <Button Caption="Rot" ID="4" Icon="">
+      <WindowState Visible="True" X="5" Y="125" Width="125" Height="75"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -654,7 +699,20 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
       </Appearance>
-      <Function ID="11"/>
+      <Function ID="20"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Rot Blau" ID="5" Icon="">
+      <WindowState Visible="True" X="5" Y="205" Width="160" Height="70"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="22"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -667,7 +725,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="15" Y="50" Width="205" Height="240"/>
+     <WindowState Visible="True" X="15" Y="50" Width="220" Height="325"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -675,7 +733,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Bunt" ID="31" Icon="">
-      <WindowState Visible="False" X="10" Y="45" Width="165" Height="75"/>
+      <WindowState Visible="True" X="10" Y="45" Width="165" Height="75"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -687,8 +745,8 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Dimmer Fade" ID="18" Icon="">
-      <WindowState Visible="False" X="10" Y="150" Width="170" Height="80"/>
+     <Button Caption="Bunt Fade" ID="18" Icon="">
+      <WindowState Visible="True" X="10" Y="145" Width="170" Height="80"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -697,6 +755,19 @@
        <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
       </Appearance>
       <Function ID="54"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Rot" ID="6" Icon="">
+      <WindowState Visible="True" X="15" Y="230" Width="170" Height="80"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="34"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -709,7 +780,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="245" Y="55" Width="165" Height="225"/>
+     <WindowState Visible="True" X="265" Y="55" Width="165" Height="225"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -717,7 +788,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Bunt" ID="3" Icon="">
-      <WindowState Visible="False" X="10" Y="45" Width="140" Height="75"/>
+      <WindowState Visible="True" X="10" Y="45" Width="140" Height="75"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -730,7 +801,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Rot" ID="8" Icon="">
-      <WindowState Visible="False" X="10" Y="130" Width="140" Height="80"/>
+      <WindowState Visible="True" X="10" Y="130" Width="140" Height="80"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -751,7 +822,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="10" Y="315" Width="635" Height="255"/>
+     <WindowState Visible="True" X="10" Y="385" Width="830" Height="240"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
