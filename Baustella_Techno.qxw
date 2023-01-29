@@ -550,6 +550,11 @@
    <Step Number="0">12</Step>
    <Step Number="1">85</Step>
   </Function>
+  <Function ID="87" Type="Scene" Name="S Blinder" Path="Scanner">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,182,1,167,2,106,3,0,4,10,5,255</FixtureVal>
+   <FixtureVal ID="2">0,78,1,185,2,105,3,0,4,10,5,255</FixtureVal>
+  </Function>
   <Function ID="95" Type="Collection" Name="QP Aus" Path="Quad Phase">
    <Step Number="0">44</Step>
    <Step Number="1">25</Step>
