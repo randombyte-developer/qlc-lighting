@@ -247,6 +247,7 @@
   </Function>
   <Function ID="32" Type="Collection" Name="Rot" Path="Combi">
    <Step Number="0">20</Step>
+   <Step Number="1">34</Step>
   </Function>
   <Function ID="33" Type="Scene" Name="P Grün D" Path="Pinspot/Dunkel">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -406,9 +407,18 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,255,1,255,2,0,3,0,4,0</FixtureVal>
   </Function>
+  <Function ID="63" Type="Collection" Name="Bunt" Path="Combi">
+   <Step Number="0">5</Step>
+   <Step Number="1">70</Step>
+  </Function>
   <Function ID="64" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">5,0</FixtureVal>
+  </Function>
+  <Function ID="65" Type="Collection" Name="Strobe" Path="Combi">
+   <Step Number="0">17</Step>
+   <Step Number="1">26</Step>
+   <Step Number="2">30</Step>
   </Function>
   <Function ID="66" Type="Scene" Name="" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -503,6 +513,18 @@
    <Step Number="1">73</Step>
    <Step Number="2">68</Step>
   </Function>
+  <Function ID="77" Type="Collection" Name="_S Rotes Punkte Hell" Path="Scanner">
+   <Step Number="0">52</Step>
+  </Function>
+  <Function ID="78" Type="Collection" Name="_QP Langsam rot" Path="Quad Phase">
+   <Step Number="0">20</Step>
+  </Function>
+  <Function ID="79" Type="Collection" Name="_QP Langsam bunt" Path="Quad Phase">
+   <Step Number="0">5</Step>
+  </Function>
+  <Function ID="80" Type="Collection" Name="_S Bunt Punkte Hell" Path="Scanner">
+   <Step Number="0">70</Step>
+  </Function>
   <Function ID="95" Type="Collection" Name="QP Aus" Path="Quad Phase">
    <Step Number="0">44</Step>
    <Step Number="1">25</Step>
@@ -546,92 +568,6 @@
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
-   <SoloFrame Caption="Nebel" ID="11">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="True" X="965" Y="165" Width="230" Height="145"/>
-    <AllowChildren>True</AllowChildren>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>False</ShowEnableButton>
-    <Mixing>False</Mixing>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="An" ID="10" Icon="">
-     <WindowState Visible="True" X="5" Y="40" Width="105" Height="95"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4293969247</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="27"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Aus" ID="12" Icon="">
-     <WindowState Visible="True" X="115" Y="40" Width="105" Height="95"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4293969247</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="28"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-   </SoloFrame>
-   <SoloFrame Caption="UV" ID="15">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="True" X="965" Y="5" Width="230" Height="150"/>
-    <AllowChildren>True</AllowChildren>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>False</ShowEnableButton>
-    <Mixing>False</Mixing>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="An" ID="16" Icon="">
-     <WindowState Visible="True" X="5" Y="40" Width="105" Height="95"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4293969247</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="23"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Aus" ID="17" Icon="">
-     <WindowState Visible="True" X="115" Y="40" Width="105" Height="95"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4293969247</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="39"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-   </SoloFrame>
    <SoloFrame Caption="" ID="25">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
@@ -640,7 +576,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="5" Y="5" Width="955" Height="790"/>
+    <WindowState Visible="True" X="5" Y="5" Width="1080" Height="790"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -686,7 +622,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
       </Appearance>
-      <Function ID="5"/>
+      <Function ID="79"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -699,7 +635,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
       </Appearance>
-      <Function ID="20"/>
+      <Function ID="78"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -741,7 +677,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
       </Appearance>
-      <Function ID="70"/>
+      <Function ID="80"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -767,7 +703,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
       </Appearance>
-      <Function ID="34"/>
+      <Function ID="77"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -829,8 +765,73 @@
      <ShowEnableButton>False</ShowEnableButton>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
+     <Button Caption="Rot" ID="7" Icon="">
+      <WindowState Visible="True" X="10" Y="50" Width="170" Height="80"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="32"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Bunt" ID="9" Icon="">
+      <WindowState Visible="True" X="200" Y="50" Width="170" Height="80"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="63"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Strobe" ID="13" Icon="">
+      <WindowState Visible="True" X="400" Y="45" Width="170" Height="80"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="65"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
     </Frame>
    </SoloFrame>
+   <Button Caption="UV" ID="16" Icon="">
+    <WindowState Visible="True" X="1090" Y="105" Width="105" Height="95"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4293969247</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+    </Appearance>
+    <Function ID="23"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Nebel" ID="10" Icon="">
+    <WindowState Visible="True" X="1090" Y="5" Width="105" Height="95"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4293969247</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+    </Appearance>
+    <Function ID="27"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1200" Height="800"/>
