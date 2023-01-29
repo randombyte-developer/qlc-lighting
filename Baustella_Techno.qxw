@@ -223,7 +223,6 @@
   <Function ID="26" Type="Collection" Name="QP Strobe" Path="Quad Phase">
    <Step Number="0">25</Step>
    <Step Number="1">24</Step>
-   <Step Number="2">96</Step>
   </Function>
   <Function ID="27" Type="Scene" Name="H An" Path="Hazer">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -525,6 +524,32 @@
   <Function ID="80" Type="Collection" Name="_S Bunt Punkte Hell" Path="Scanner">
    <Step Number="0">70</Step>
   </Function>
+  <Function ID="81" Type="Collection" Name="Random Strobe" Path="Combi">
+   <Step Number="0">82</Step>
+   <Step Number="1">83</Step>
+   <Step Number="2">86</Step>
+  </Function>
+  <Function ID="82" Type="Scene" Name="P Strobe Langsam" Path="Pinspot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,181,1,255,2,255,3,255,4,255</FixtureVal>
+  </Function>
+  <Function ID="83" Type="Collection" Name="QP Strobe Langsam" Path="Quad Phase">
+   <Step Number="0">25</Step>
+   <Step Number="1">84</Step>
+  </Function>
+  <Function ID="84" Type="Scene" Name="QP Strobe Langsam" Path="Quad Phase">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,255,2,107,3,51</FixtureVal>
+  </Function>
+  <Function ID="85" Type="Scene" Name="S Strobe Random" Path="Scanner">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,182,1,167,2,7,3,0,4,162,5,255</FixtureVal>
+   <FixtureVal ID="2">0,78,1,185,2,7,3,0,4,162,5,255</FixtureVal>
+  </Function>
+  <Function ID="86" Type="Collection" Name="S Strobe Random" Path="Scanner">
+   <Step Number="0">12</Step>
+   <Step Number="1">85</Step>
+  </Function>
   <Function ID="95" Type="Collection" Name="QP Aus" Path="Quad Phase">
    <Step Number="0">44</Step>
    <Step Number="1">25</Step>
@@ -766,7 +791,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Rot" ID="7" Icon="">
-      <WindowState Visible="True" X="10" Y="50" Width="170" Height="80"/>
+      <WindowState Visible="True" X="185" Y="40" Width="170" Height="80"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -779,7 +804,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Bunt" ID="9" Icon="">
-      <WindowState Visible="True" X="200" Y="50" Width="170" Height="80"/>
+      <WindowState Visible="True" X="5" Y="40" Width="170" Height="80"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -791,8 +816,8 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Strobe" ID="13" Icon="">
-      <WindowState Visible="True" X="400" Y="45" Width="170" Height="80"/>
+     <Button Caption="Strobe S" ID="13" Icon="">
+      <WindowState Visible="True" X="5" Y="130" Width="170" Height="80"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -802,6 +827,21 @@
       </Appearance>
       <Function ID="65"/>
       <Action>Toggle</Action>
+      <Key>S</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Random Strobe" ID="15" Icon="">
+      <WindowState Visible="True" X="185" Y="130" Width="170" Height="80"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="81"/>
+      <Action>Toggle</Action>
+      <Key>S</Key>
       <Intensity Adjust="False">100</Intensity>
      </Button>
     </Frame>
