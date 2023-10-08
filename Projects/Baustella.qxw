@@ -4,13 +4,15 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>Sven Rahn</Author>
+  <Author>PC-Baustella-01</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" UID="None" Line="1"/>
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A50285BI)" Line="0">
+     <PluginParameters UniverseChannels="105"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -409,7 +411,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,255,1,255,2,0,3,0,4,0</FixtureVal>
   </Function>
-  <Function ID="63" Type="Collection" Name="Bunt" Path="Combi">
+  <Function ID="63" Type="Collection" Name="Bunt 1" Path="Combi">
    <Step Number="0">5</Step>
    <Step Number="1">70</Step>
   </Function>
@@ -666,6 +668,18 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,182,1,167,2,7,3,0,4,177,5,255</FixtureVal>
   </Function>
+  <Function ID="106" Type="Chaser" Name="Bunt 2" Path="Combi">
+   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">70</Step>
+   <Step Number="1" FadeIn="0" Hold="4000" FadeOut="0">5</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">100</Step>
+  </Function>
+  <Function ID="107" Type="Collection" Name="_P Bunt H" Path="Pinspot">
+   <Step Number="0">100</Step>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -698,7 +712,7 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="Aus" ID="14" Icon="">
+    <Button Caption="Aus A" ID="14" Icon="">
      <WindowState Visible="True" X="10" Y="685" Width="120" Height="95"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -709,6 +723,7 @@
      </Appearance>
      <Function ID="45"/>
      <Action>Toggle</Action>
+     <Key>A</Key>
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Frame Caption="Quad Phase" ID="19">
@@ -858,7 +873,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
       </Appearance>
-      <Function ID="100"/>
+      <Function ID="107"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -891,8 +906,8 @@
      <ShowEnableButton>False</ShowEnableButton>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <Button Caption="Rot" ID="7" Icon="">
-      <WindowState Visible="True" X="185" Y="40" Width="170" Height="80"/>
+     <Button Caption="Rot R" ID="7" Icon="">
+      <WindowState Visible="True" X="365" Y="40" Width="170" Height="80"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -902,9 +917,10 @@
       </Appearance>
       <Function ID="32"/>
       <Action>Toggle</Action>
+      <Key>R</Key>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Bunt" ID="9" Icon="">
+     <Button Caption="Bunt 1 W" ID="9" Icon="">
       <WindowState Visible="True" X="5" Y="40" Width="170" Height="80"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
@@ -915,6 +931,7 @@
       </Appearance>
       <Function ID="63"/>
       <Action>Toggle</Action>
+      <Key>W</Key>
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Strobe S" ID="13" Icon="">
@@ -957,6 +974,20 @@
       <Function ID="92"/>
       <Action>Toggle</Action>
       <Key>F</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Bunt 2 E" ID="34" Icon="">
+      <WindowState Visible="True" X="185" Y="40" Width="170" Height="80"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293969247</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Arial,20,-1,5,87,0,0,0,0,0</Font>
+      </Appearance>
+      <Function ID="106"/>
+      <Action>Toggle</Action>
+      <Key>E</Key>
       <Intensity Adjust="False">100</Intensity>
      </Button>
     </Frame>
@@ -1164,8 +1195,8 @@
      <Value>1000</Value>
     </Preset>
     <Preset ID="18">
-     <Name>1s</Name>
-     <Value>1000</Value>
+     <Name>2s</Name>
+     <Value>2000</Value>
     </Preset>
    </SpeedDial>
   </Frame>
