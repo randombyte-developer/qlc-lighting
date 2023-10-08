@@ -9,9 +9,9 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="None" Line="1"/>
+    <Input Plugin="MIDI" UID="MIDIIN2 (Akai MPD26)" Line="1"/>
     <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A50285BI)" Line="0">
-     <PluginParameters UniverseChannels="105"/>
+     <PluginParameters UniverseChannels="144"/>
     </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
@@ -83,6 +83,26 @@
    <Universe>0</Universe>
    <Address>69</Address>
    <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>DJ World</Manufacturer>
+   <Model>Moving Wash</Model>
+   <Mode>15 CH</Mode>
+   <ID>6</ID>
+   <Name>Moving Wash Hinten</Name>
+   <Universe>0</Universe>
+   <Address>109</Address>
+   <Channels>15</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>DJ World</Manufacturer>
+   <Model>Moving Wash</Model>
+   <Mode>15 CH</Mode>
+   <ID>7</ID>
+   <Name>Moving Wash Vorne</Name>
+   <Universe>0</Universe>
+   <Address>129</Address>
+   <Channels>15</Channels>
   </Fixture>
   <Function ID="0" Type="Scene" Name="QP Rot" Path="Quad Phase/Farben">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -317,6 +337,7 @@
    <Step Number="1">16</Step>
    <Step Number="2">25</Step>
    <Step Number="3">44</Step>
+   <Step Number="4">114</Step>
   </Function>
   <Function ID="46" Type="Scene" Name="P Aus" Path="Pinspot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -345,7 +366,7 @@
    <Step Number="1">51</Step>
    <Step Number="2">97</Step>
   </Function>
-  <Function ID="51" Type="Sequence" Name="S F Dimmer L" BoundScene="53">
+  <Function ID="51" Type="Sequence" Name="S F Dimmer L" Path="Scanner" BoundScene="53">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -428,7 +449,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">0,0,1,0</FixtureVal>
   </Function>
-  <Function ID="67" Type="Sequence" Name="S Positionen L" BoundScene="66">
+  <Function ID="67" Type="Sequence" Name="S Positionen L" Path="Scanner" BoundScene="66">
    <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
@@ -443,7 +464,7 @@
    <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0" Values="2">2:0,53,1,58</Step>
    <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0" Values="2">2:0,32,1,60</Step>
   </Function>
-  <Function ID="68" Type="Sequence" Name="S Positionen R" BoundScene="69">
+  <Function ID="68" Type="Sequence" Name="S Positionen R" Path="Scanner" BoundScene="69">
    <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
@@ -473,7 +494,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">2,0</FixtureVal>
   </Function>
-  <Function ID="72" Type="Sequence" Name="S Bunt L" BoundScene="71">
+  <Function ID="72" Type="Sequence" Name="S Bunt L" Path="Scanner" BoundScene="71">
    <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
@@ -486,7 +507,7 @@
    <Step Number="5" FadeIn="0" Hold="0" FadeOut="0" Values="1">2:2,103</Step>
    <Step Number="6" FadeIn="0" Hold="0" FadeOut="0" Values="1">2:2,119</Step>
   </Function>
-  <Function ID="73" Type="Sequence" Name="S Bunt R" BoundScene="74">
+  <Function ID="73" Type="Sequence" Name="S Bunt R" Path="Scanner" BoundScene="74">
    <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
@@ -503,7 +524,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">2,0</FixtureVal>
   </Function>
-  <Function ID="75" Type="Sequence" Name="S F Dimmer R" BoundScene="64">
+  <Function ID="75" Type="Sequence" Name="S F Dimmer R" Path="Scanner" BoundScene="64">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -586,7 +607,7 @@
    <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">89</Step>
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">88</Step>
   </Function>
-  <Function ID="93" Type="Collection" Name="Rot" Path="Pinspot">
+  <Function ID="93" Type="Collection" Name="P Rot" Path="Pinspot">
    <Step Number="0">62</Step>
   </Function>
   <Function ID="94" Type="Collection" Name="S Rot Punkte Hell" Path="Scanner">
@@ -604,7 +625,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,247,3,51</FixtureVal>
   </Function>
-  <Function ID="97" Type="Sequence" Name="S Positionen L Fade" BoundScene="98">
+  <Function ID="97" Type="Sequence" Name="S Positionen L Fade" Path="Scanner" BoundScene="98">
    <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
@@ -642,7 +663,7 @@
   <Function ID="101" Type="Scene" Name="QP Bunt - 4" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
-  <Function ID="102" Type="Sequence" Name="S Positionen R Fade" BoundScene="103">
+  <Function ID="102" Type="Sequence" Name="S Positionen R Fade" Path="Scanner" BoundScene="103">
    <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
@@ -669,21 +690,223 @@
    <FixtureVal ID="3">0,182,1,167,2,7,3,0,4,177,5,255</FixtureVal>
   </Function>
   <Function ID="106" Type="Chaser" Name="Bunt 2" Path="Combi">
-   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="16000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">70</Step>
    <Step Number="1" FadeIn="0" Hold="4000" FadeOut="0">5</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">100</Step>
   </Function>
   <Function ID="107" Type="Collection" Name="_P Bunt H" Path="Pinspot">
    <Step Number="0">100</Step>
   </Function>
+  <Function ID="108" Type="Scene" Name="M Discokugel" Path="Moving Head/Positionen">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,86,2,1</FixtureVal>
+   <FixtureVal ID="7">0,84,2,0</FixtureVal>
+  </Function>
+  <Function ID="109" Type="Scene" Name="M Strobe Schnell" Path="Moving Head/Strobe">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">5,233,9,255</FixtureVal>
+   <FixtureVal ID="7">5,233,9,255</FixtureVal>
+  </Function>
+  <Function ID="110" Type="Scene" Name="M Strobe Langsam" Path="Moving Head/Strobe">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">5,210,9,255</FixtureVal>
+   <FixtureVal ID="7">5,206,9,255</FixtureVal>
+  </Function>
+  <Function ID="111" Type="Scene" Name="M Amber" Path="Moving Head/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">10,255</FixtureVal>
+   <FixtureVal ID="7">10,255</FixtureVal>
+  </Function>
+  <Function ID="112" Type="Scene" Name="M Hell" Path="Moving Head">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">5,255</FixtureVal>
+   <FixtureVal ID="7">5,255</FixtureVal>
+  </Function>
+  <Function ID="113" Type="Scene" Name="M Hell Dunkel" Path="Moving Head">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">5,28</FixtureVal>
+   <FixtureVal ID="7">5,28</FixtureVal>
+  </Function>
+  <Function ID="114" Type="Scene" Name="M Aus" Path="Moving Head">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">5,0</FixtureVal>
+   <FixtureVal ID="7">5,0</FixtureVal>
+  </Function>
+  <Function ID="115" Type="Collection" Name="M Strobe Schnell" Path="Moving Head">
+   <Step Number="0">109</Step>
+   <Step Number="1">108</Step>
+  </Function>
+  <Function ID="116" Type="Collection" Name="M Strobe Langsam" Path="Moving Head">
+   <Step Number="0">108</Step>
+   <Step Number="1">110</Step>
+  </Function>
+  <Function ID="117" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0,5,0,6,0</FixtureVal>
+  </Function>
+  <Function ID="118" Type="Sequence" Name="M Positionen V" Path="Moving Head" BoundScene="117">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,51,2,71,3,54,5,255,6,255</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,56,2,131,3,54,5,255,6,255</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,179,1,207,2,154,3,161,5,255,6,255</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,8,2,196,3,54,5,255,6,255</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,34,2,196,3,54,5,255,6,255</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,162,2,183,3,54,5,255,6,255</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,186,1,87,2,149,3,121,5,255,6,255</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,88,1,91,2,195,3,221,5,255,6,255</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,97,1,168,2,22,3,85,5,255,6,255</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,74,1,168,2,55,3,85,5,255,6,255</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,208,1,95,2,23,3,250,5,255,6,255</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,127,1,200,2,35,3,140,5,255,6,255</Step>
+   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,170,1,144,2,164,3,36,5,255,6,255</Step>
+   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,183,1,144,2,211,3,36,5,255,6,255</Step>
+   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0" Values="6">7:0,183,1,144,2,74,3,36,5,255,6,255</Step>
+  </Function>
+  <Function ID="119" Type="Sequence" Name="M Positionen H" Path="Moving Head" BoundScene="120">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,91,1,135,2,128,3,219</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,173,1,12,2,92,3,199</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,180,1,51,2,156,3,89</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,223,1,27,2,49,3,49</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,28,1,237,2,92,3,61</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,86,1,237,2,53,3,61</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,104,1,237,2,44,3,61</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,27,1,237,2,25,3,61</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,177,1,155,2,49,3,197</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,171,1,155,2,82,3,197</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,68,1,155,2,42,3,197</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,80,1,155,2,51,3,197</Step>
+   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,131,1,55,2,95,3,231</Step>
+   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,152,1,72,2,169,3,63</Step>
+   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,184,1,72,2,144,3,63</Step>
+  </Function>
+  <Function ID="120" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="121" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">6,0,7,0,8,0,10,0</FixtureVal>
+   <FixtureVal ID="6">6,0,7,0,8,0,10,0</FixtureVal>
+  </Function>
+  <Function ID="122" Type="Sequence" Name="M Bunt V" Path="Moving Head" BoundScene="121">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="4">7:6,255</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="4">7:7,255</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="4">7:8,255</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0" Values="4">7:6,255,8,255</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0" Values="4">7:6,255,7,255</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0" Values="4">7:7,255,8,255</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0" Values="4">7:10,255</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0" Values="4">7:6,255,10,255</Step>
+  </Function>
+  <Function ID="123" Type="Sequence" Name="M Bunt H" Path="Moving Head" BoundScene="124">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="8">6:6,255:7:6,255</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:7,255</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:8,255</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:10,255</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:6,255,7,255</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:7,255,8,255</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:6,255,7,17,8,255</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:6,255,7,17,10,255</Step>
+  </Function>
+  <Function ID="124" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">6,0,7,0,8,0,10,0</FixtureVal>
+  </Function>
+  <Function ID="125" Type="Collection" Name="M Bunt" Path="Moving Head">
+   <Step Number="0">123</Step>
+   <Step Number="1">122</Step>
+   <Step Number="2">119</Step>
+   <Step Number="3">118</Step>
+  </Function>
+  <Function ID="126" Type="Scene" Name="M UV" Path="Moving Head/Farben">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,128,1,0,2,128,3,0,11,255</FixtureVal>
+   <FixtureVal ID="7">0,128,1,0,2,128,3,0,11,255</FixtureVal>
+  </Function>
+  <Function ID="127" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="128" Type="Sequence" Name="M Boden H" Path="Moving Head" BoundScene="127">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,111,1,141,2,98,3,140</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,111,1,141,2,165,3,140</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,69,1,141,2,56,3,140</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,79,1,141,2,172,3,140</Step>
+  </Function>
+  <Function ID="129" Type="Sequence" Name="M Boden V" Path="Moving Head" BoundScene="130">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0" Values="4">7:0,53,1,239,2,156,3,55</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0" Values="4">7:0,53,1,239,2,83,3,55</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0" Values="4">7:0,98,1,239,2,56,3,55</Step>
+   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0" Values="4">7:0,99,1,239,2,140,3,55</Step>
+   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0" Values="4">7:0,99,1,239,2,93,3,55</Step>
+   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0" Values="4">7:0,104,1,239,2,56,3,55</Step>
+  </Function>
+  <Function ID="130" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="131" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,0,5,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="132" Type="Sequence" Name="M Swing" Path="Moving Head" BoundScene="131">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,128,2,255:7:0,127,2,255</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="4">6:0,128:7:0,127</Step>
+  </Function>
+  <Function ID="133" Type="Sequence" Name="M Swing Licht" Path="Moving Head" BoundScene="134">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2">6:5,255</Step>
+   <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0" Values="2">7:5,255</Step>
+  </Function>
+  <Function ID="134" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">5,0</FixtureVal>
+   <FixtureVal ID="7">5,0</FixtureVal>
+  </Function>
+  <Function ID="135" Type="Collection" Name="M Swing" Path="Moving Head">
+   <Step Number="0">133</Step>
+   <Step Number="1">123</Step>
+   <Step Number="2">122</Step>
+   <Step Number="3">132</Step>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
-   <ValueStyle>0</ValueStyle>
+   <ValueStyle>1</ValueStyle>
    <Grid Width="5" Height="3" Depth="5" Units="0"/>
   </Monitor>
  </Engine>
@@ -1199,6 +1422,19 @@
      <Value>2000</Value>
     </Preset>
    </SpeedDial>
+   <Button Caption="M Swing" ID="35" Icon="">
+    <WindowState Visible="True" X="255" Y="320" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="135"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1200" Height="800"/>
