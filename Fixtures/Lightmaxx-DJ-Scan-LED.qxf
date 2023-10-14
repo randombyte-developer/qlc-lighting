@@ -53,16 +53,16 @@
   <Capability Min="207" Max="255" Preset="RotationClockwiseSlowToFast">Rotate</Capability>
  </Channel>
  <Channel Name="Strobe">
-  <Group Byte="0">Nothing</Group>
-  <Capability Min="0" Max="9">Closed</Capability>
-  <Capability Min="10" Max="19">Open</Capability>
-  <Capability Min="20" Max="127">Strobe</Capability>
-  <Capability Min="128" Max="137">Open</Capability>
-  <Capability Min="138" Max="201">Random Strobe</Capability>
-  <Capability Min="202" Max="255">Open</Capability>
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="9" Preset="ShutterClose">Closed</Capability>
+  <Capability Min="10" Max="19" Preset="ShutterOpen">Open</Capability>
+  <Capability Min="20" Max="127" Preset="StrobeSlowToFast">Strobe</Capability>
+  <Capability Min="128" Max="137" Preset="ShutterOpen">Open</Capability>
+  <Capability Min="138" Max="201" Preset="StrobeRandomSlowToFast">Random Strobe</Capability>
+  <Capability Min="202" Max="255" Preset="ShutterOpen">Open</Capability>
  </Channel>
  <Channel Name="Master dimmer" Default="255">
-  <Group Byte="0">Nothing</Group>
+  <Group Byte="0">Intensity</Group>
   <Capability Min="0" Max="4" Preset="ShutterClose">Off</Capability>
   <Capability Min="5" Max="255">Dimmer</Capability>
  </Channel>
