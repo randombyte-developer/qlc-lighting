@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.2</Version>
+  <Version>4.12.7</Version>
   <Author>Sven Rahn</Author>
  </Creator>
  <Manufacturer>lightmaXX</Manufacturer>
@@ -27,42 +27,42 @@
  </Channel>
  <Channel Name="Gobo">
   <Group Byte="0">Gobo</Group>
-  <Capability Min="0" Max="8" Preset="GoboMacro">Open</Capability>
-  <Capability Min="9" Max="17" Preset="GoboMacro">Flower</Capability>
-  <Capability Min="18" Max="26" Preset="GoboMacro">Stars</Capability>
-  <Capability Min="27" Max="35" Preset="GoboMacro">Love</Capability>
-  <Capability Min="36" Max="44" Preset="GoboMacro">Tornados</Capability>
-  <Capability Min="45" Max="53" Preset="GoboMacro">Flowers</Capability>
-  <Capability Min="54" Max="62" Preset="GoboMacro">Tunnel</Capability>
-  <Capability Min="63" Max="71" Preset="GoboMacro">Spiral</Capability>
-  <Capability Min="72" Max="80" Preset="GoboMacro">Snow flake</Capability>
-  <Capability Min="81" Max="89" Preset="GoboMacro">Leaf</Capability>
-  <Capability Min="90" Max="98" Preset="GoboMacro">Sunflower</Capability>
-  <Capability Min="99" Max="107" Preset="GoboMacro">Adidas</Capability>
-  <Capability Min="108" Max="116" Preset="GoboShakeMacro">Flower</Capability>
-  <Capability Min="117" Max="125" Preset="GoboShakeMacro">Stars</Capability>
-  <Capability Min="126" Max="134" Preset="GoboShakeMacro">Love</Capability>
-  <Capability Min="135" Max="143" Preset="GoboShakeMacro">Tornados</Capability>
-  <Capability Min="144" Max="152" Preset="GoboShakeMacro">Flowers</Capability>
-  <Capability Min="153" Max="161" Preset="GoboShakeMacro">Tunnel</Capability>
-  <Capability Min="162" Max="170" Preset="GoboShakeMacro">Spiral</Capability>
+  <Capability Min="0" Max="8" Preset="GoboMacro" Res1="">Open</Capability>
+  <Capability Min="9" Max="17" Preset="GoboMacro" Res1="">Flower</Capability>
+  <Capability Min="18" Max="26" Preset="GoboMacro" Res1="">Stars</Capability>
+  <Capability Min="27" Max="35" Preset="GoboMacro" Res1="">Love</Capability>
+  <Capability Min="36" Max="44" Preset="GoboMacro" Res1="">Tornados</Capability>
+  <Capability Min="45" Max="53" Preset="GoboMacro" Res1="">Flowers</Capability>
+  <Capability Min="54" Max="62" Preset="GoboMacro" Res1="">Tunnel</Capability>
+  <Capability Min="63" Max="71" Preset="GoboMacro" Res1="">Spiral</Capability>
+  <Capability Min="72" Max="80" Preset="GoboMacro" Res1="">Snow flake</Capability>
+  <Capability Min="81" Max="89" Preset="GoboMacro" Res1="">Leaf</Capability>
+  <Capability Min="90" Max="98" Preset="GoboMacro" Res1="">Sunflower</Capability>
+  <Capability Min="99" Max="107" Preset="GoboMacro" Res1="">Adidas</Capability>
+  <Capability Min="108" Max="116" Preset="GoboShakeMacro" Res1="">Flower</Capability>
+  <Capability Min="117" Max="125" Preset="GoboShakeMacro" Res1="">Stars</Capability>
+  <Capability Min="126" Max="134" Preset="GoboShakeMacro" Res1="">Love</Capability>
+  <Capability Min="135" Max="143" Preset="GoboShakeMacro" Res1="">Tornados</Capability>
+  <Capability Min="144" Max="152" Preset="GoboShakeMacro" Res1="">Flowers</Capability>
+  <Capability Min="153" Max="161" Preset="GoboShakeMacro" Res1="">Tunnel</Capability>
+  <Capability Min="162" Max="170" Preset="GoboShakeMacro" Res1="">Spiral</Capability>
   <Capability Min="171" Max="179">Snow flake</Capability>
-  <Capability Min="180" Max="188" Preset="GoboShakeMacro">Leaf</Capability>
-  <Capability Min="189" Max="197" Preset="GoboShakeMacro">Sunflower</Capability>
-  <Capability Min="198" Max="206" Preset="GoboShakeMacro">Adidas</Capability>
+  <Capability Min="180" Max="188" Preset="GoboShakeMacro" Res1="">Leaf</Capability>
+  <Capability Min="189" Max="197" Preset="GoboShakeMacro" Res1="">Sunflower</Capability>
+  <Capability Min="198" Max="206" Preset="GoboShakeMacro" Res1="">Adidas</Capability>
   <Capability Min="207" Max="255" Preset="RotationClockwiseSlowToFast">Rotate</Capability>
  </Channel>
- <Channel Name="Strobe" Default="10">
-  <Group Byte="0">Shutter</Group>
-  <Capability Min="0" Max="9" Preset="ShutterClose">Closed</Capability>
-  <Capability Min="10" Max="19" Preset="ShutterOpen">Open</Capability>
-  <Capability Min="20" Max="127" Preset="StrobeFreqRange" Res1="0.4" Res2="60">Strobe</Capability>
-  <Capability Min="128" Max="137" Preset="ShutterOpen">Open</Capability>
-  <Capability Min="138" Max="201" Preset="StrobeRandomSlowToFast">Random Strobe</Capability>
-  <Capability Min="202" Max="255" Preset="ShutterOpen">Open</Capability>
+ <Channel Name="Strobe">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="9">Closed</Capability>
+  <Capability Min="10" Max="19">Open</Capability>
+  <Capability Min="20" Max="127">Strobe</Capability>
+  <Capability Min="128" Max="137">Open</Capability>
+  <Capability Min="138" Max="201">Random Strobe</Capability>
+  <Capability Min="202" Max="255">Open</Capability>
  </Channel>
  <Channel Name="Master dimmer" Default="255">
-  <Group Byte="0">Intensity</Group>
+  <Group Byte="0">Nothing</Group>
   <Capability Min="0" Max="4" Preset="ShutterClose">Off</Capability>
   <Capability Min="5" Max="255">Dimmer</Capability>
  </Channel>
