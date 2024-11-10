@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>PC-Baustella-01</Author>
+ </Creator>
+ <Manufacturer>Yiflamefly</Manufacturer>
+ <Model>Moving Head Beam</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Pan/Tilt speed" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="Master dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="9" Preset="LampOn">Open</Capability>
+  <Capability Min="10" Max="249" Preset="StrobeSlowToFast">Strobe</Capability>
+  <Capability Min="250" Max="255" Preset="LampOn">Open</Capability>
+ </Channel>
+ <Channel Name="Colour">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="9" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="10" Max="19" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="20" Max="29" Preset="ColorMacro" Res1="#ffff00">Yellow</Capability>
+  <Capability Min="30" Max="39" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="40" Max="49" Preset="ColorMacro" Res1="#00ff00">Green</Capability>
+  <Capability Min="50" Max="59" Preset="ColorMacro" Res1="#ffaa00">Orange</Capability>
+  <Capability Min="60" Max="69" Preset="ColorMacro" Res1="#ff00ff">Purple</Capability>
+  <Capability Min="70" Max="79" Preset="ColorMacro" Res1="#00aaff">Light Blue</Capability>
+  <Capability Min="80" Max="89" Preset="ColorDoubleMacro" Res1="#ff00ff" Res2="#00aaff">Purple/Light Blue</Capability>
+  <Capability Min="90" Max="99" Preset="ColorDoubleMacro" Res1="#ffaa00" Res2="#ff00ff">Orange/Purple</Capability>
+  <Capability Min="100" Max="109" Preset="ColorDoubleMacro" Res1="#00ff00" Res2="#ffaa00">Green/Orange</Capability>
+  <Capability Min="110" Max="119" Preset="ColorDoubleMacro" Res1="#0000ff" Res2="#00ff00">Blue/Green</Capability>
+  <Capability Min="120" Max="129" Preset="ColorDoubleMacro" Res1="#ffff00" Res2="#0000ff">Yellow/Blue</Capability>
+  <Capability Min="130" Max="139" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#ffff00">Red/Yellow</Capability>
+  <Capability Min="140" Max="255" Preset="SlowToFast">Auto</Capability>
+ </Channel>
+ <Channel Name="Gobo">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="7" Preset="GoboMacro">Open</Capability>
+  <Capability Min="8" Max="15" Preset="GoboMacro">Tornado</Capability>
+  <Capability Min="16" Max="23" Preset="GoboMacro">Swirl</Capability>
+  <Capability Min="24" Max="31" Preset="GoboMacro">Cobble</Capability>
+  <Capability Min="32" Max="39" Preset="GoboMacro">Triangle</Capability>
+  <Capability Min="40" Max="47" Preset="GoboMacro">Dots</Capability>
+  <Capability Min="48" Max="55" Preset="GoboMacro">Baaam</Capability>
+  <Capability Min="56" Max="63" Preset="GoboMacro">Circle</Capability>
+  <Capability Min="64" Max="71" Preset="GoboMacro">Open</Capability>
+  <Capability Min="72" Max="79" Preset="GoboShakeMacro">Tornado</Capability>
+  <Capability Min="80" Max="87" Preset="GoboShakeMacro">Swirl</Capability>
+  <Capability Min="88" Max="95" Preset="GoboShakeMacro">Cobble</Capability>
+  <Capability Min="96" Max="103" Preset="GoboShakeMacro">Triangle</Capability>
+  <Capability Min="104" Max="111" Preset="GoboShakeMacro">Dots</Capability>
+  <Capability Min="112" Max="119" Preset="GoboShakeMacro">Baaam</Capability>
+  <Capability Min="120" Max="127" Preset="GoboShakeMacro">Cirlce</Capability>
+  <Capability Min="128" Max="255" Preset="SlowToFast">Auto</Capability>
+ </Channel>
+ <Channel Name="Prism">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="99" Preset="PrismEffectOff">Off</Capability>
+  <Capability Min="100" Max="127" Preset="PrismEffectOn">On</Capability>
+  <Capability Min="128" Max="255" Preset="RotationClockwiseSlowToFast">Rotation</Capability>
+ </Channel>
+ <Channel Name="Focus" Preset="BeamFocusNearFar"/>
+ <Channel Name="Auto">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="59">Off</Capability>
+  <Capability Min="60" Max="75">Auto 1</Capability>
+  <Capability Min="76" Max="90">Auto 2</Capability>
+  <Capability Min="91" Max="105">Auto 3</Capability>
+  <Capability Min="106" Max="120">Auto 4</Capability>
+  <Capability Min="121" Max="135">Auto 5</Capability>
+  <Capability Min="136" Max="159">Auto 6</Capability>
+  <Capability Min="160" Max="175">Sound 1</Capability>
+  <Capability Min="176" Max="190">Sound 2</Capability>
+  <Capability Min="191" Max="205">Sound 3</Capability>
+  <Capability Min="206" Max="220">Sound 4</Capability>
+  <Capability Min="221" Max="235">Sound 5</Capability>
+  <Capability Min="236" Max="255">Sound 6</Capability>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="249">Off</Capability>
+  <Capability Min="250" Max="255" Preset="ResetAll">Reset</Capability>
+ </Channel>
+ <Mode Name="13 Channel">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Pan/Tilt speed</Channel>
+  <Channel Number="5">Master dimmer</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Colour</Channel>
+  <Channel Number="8">Gobo</Channel>
+  <Channel Number="9">Prism</Channel>
+  <Channel Number="10">Focus</Channel>
+  <Channel Number="11">Auto</Channel>
+  <Channel Number="12">Reset</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Head" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="85" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
